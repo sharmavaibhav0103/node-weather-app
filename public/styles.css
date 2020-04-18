@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('https://weatherstack.com/site_images/mountains.svg'),linear-gradient(135deg,#1f4e69 0,#164058 100%);;
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    position: absolute;
+    left: 30%;
+    top: 30;
+}
+.header > h1{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 50px;
+    color: #f47b21;
+    font-family: 'Lato', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#hero{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 0%;
+    z-index: -1;
+}
+.header > ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+li > a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    padding: 0 10px;
+    letter-spacing: 3px;
+    transition: all 200ms ease-in;
+}
+li > a:hover{
+    color: #f47b21;
+}
+
+/** Footer **/
+.footer{
+    width: 80%;
+    position: absolute;
+    bottom: 30;
+    left: 10%;
+    font-family: 'Poppins';
+    font-weight: bold;
+    display: inline-block;
+}
+.abc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/** Styling The Form **/
+#location-form{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+#location-form > input{
+    border: none;
+    outline: none;
+    border: 5px;
+    border-radius: 3px;
+    padding: 7px 10px;
+    font-size: 15px;
+}
+#location-form > input[type="text"]{
+    padding-right: 15px;
+}
+#location-form > input[type="submit"]{
+    background-color: #f47b21;
+    color:white;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+#location-form > input[type="submit"]:hover{
+    transform: scale(0.98);
+}
+.location_data{
+    list-style: none;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+.location_data > li{
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+    padding: 20px 1px;
+}
+/** About Page **/
+.about-page, .help-page{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    color: #f47b21;
+    width: 30%;
+    font-family: monospace;
+}
