@@ -5,7 +5,7 @@ var m = document.querySelector('.location_data');
 document.querySelector('form').addEventListener('submit', (e) => {
     e.preventDefault();
     console.log('');
-    let url = 'http://localhost:3000/weather?address='+ l.value;
+    let url = '/weather?address='+ l.value;
     fetch(url)
         .then(res => res.json())
         .then(data => {
